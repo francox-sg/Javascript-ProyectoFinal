@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Productos | pandora</title>
+</head>
+
+<body>
+    <header class="headerGrid">
+        <div class="headerGrid-logo">
+            <a href="../index.html">
+            <img src="../assets/img/logoPandora.png" alt="Logo pandora">
+            <p>pandora</p></a>
+            
+        </div>
+        <div class="headerGrid-busqueda">
+            <label for="busqueda"></label>
+            <input id="busqueda" type="text" placeholder="Busqueda">
+            <img src="../assets/img/search16px.png" alt="Icono de Busqueda">
+        </div>
+        <div class="headerGrid-ingresar">
+            <a href="./login.html">Ingresar</a>
+            <div>
+                <img src="../assets/img/login 56px.png" alt="Avatar">
+            </div>
+        </div>
+        <nav class="headerGrid-nav">
+            <ul>
+                <li id="categorias"><a href="#">Categorias</a></li>
+                <li id="filtrar"><a href="#">Filtrar</a></li>
+            </ul>
+        </nav>
+        <div class="headerGrid-ubicacionCarrito">
+            <div id="vista">
+                <p>Vista</p>
+                <img src="../assets/img/Visualizacion2.png" alt="Pin Ubicacion">
+            </div>
+            <div id="carrito">
+                <p>Tu Carrito</p>
+                <img src="../assets/img/carritoNaranja56pxDer.png" alt="Imagen Carrito">
+            </div>
+        </div>
+        <div id="contenedorCategorias" class="headerGrid-categorias" >
+            <ul>
+                <li id="filtroCategoriaTodos">Todos</li>
+                <li id="filtroCategoriaRopa">Ropa</li>
+                <li id="filtroCategoriaDeportes">Deportes</li>
+                <li id="filtroCategoriaTecnologia">Tecnologia</li>
+                <li id="filtroCategoriaJoyas">Joyas</li>
+            </ul>
+        </div>
+        <div id="contenedorFiltrar" class="headerGrid-filtrar">
+            <div>
+                <h3>Nombre:</h3>
+                <button id="OrdenarNombreAscendente">Ascendente</button>
+                <button id="OrdenarNombreDescendente">Descendente</button>
+            </div>
+            <div>
+                <h3>Precio:</h3>
+                <button id="OrdenarPrecioAscendente">Ascendente</button>
+                <button id="OrdenarPrecioDescendente">Descendente</button>
+                <input id="FiltroPrecioDesde" type="number" placeholder="Desde $">
+                <input id="FiltroPrecioHasta" type="number" placeholder="Hasta $">
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Seccion Productos de Busqueda -->
+        <section id="busquedaContenedor">
+
+        </section>
+        <div id="popUpCarrito">
+        </div>
+    </main>
+    <footer>
+        <div class="footerAnchor">
+            <ul>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Gift Cards</a></li>
+                <li><a href="">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>
+        <div class="footerLogo">
+            <img src="../assets/img/logoPandora.png" alt="Logo pandora">
+            <p>pandora</p>
+            <p>Copyrigth</p>
+        </div>
+        <div class="footerAnchor">
+            <a href="">Contactanos</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="../db/productos.js"></script>
+    <script type="module" src="../db/usuarios.js"></script>
+    <script type="module" src="../js/admin.js"></script>
+    <script type="module" src="../js/carrito.js"></script>
+    <script type="module" src="../js/main.js"></script>
+    <!-- <script type="module" src="../js/usuario.js"></script> -->
+</body>
+</html>

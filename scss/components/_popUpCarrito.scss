@@ -1,0 +1,32 @@
+#popUpCarrito{
+    display:none;
+    width: 50%;
+    max-height: 500px;
+    background-color: rgba(0, 0, 0, 0.626);
+    position:fixed;
+    top: 5.625rem;
+    
+    right: 0rem;
+    overflow-y: scroll;
+    .popUpCarritoHeader{
+        display: flex;
+        justify-content: end;
+        background-color: rgba(0, 0, 0, 0.463);
+        p{
+            color: orange;
+            margin-right: 10px;
+        }
+    }
+    .botonSumRestProd{
+        color: orange;
+    }
+    .contenedorTotales{
+        background-color: rgba(0, 0, 0, 0.626);
+        display: flex;
+        justify-content: space-evenly;
+        p{
+            color: orange;
+            font-size: 1.10rem;
+        }
+    }
+}

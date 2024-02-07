@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Productos | pandora</title>
+</head>
+
+<body>
+    <header class="headerGrid">
+        <div class="headerGrid-logo">
+            <a href="./busqueda.html">
+            <img src="../assets/img/logoPandora.png" alt="Logo pandora">
+            <p>pandora</p></a>
+            
+        </div>
+        <div class="headerGrid-busqueda">
+        </div>
+        <div class="headerGrid-ingresar">
+            <a href="#">Ingresar</a>
+            <div>
+                <img src="../assets/img/login 56px.png" alt="Avatar">
+            </div>
+        </div>
+        <nav class="headerGrid-nav">
+            <ul>
+                <li><a href="./busqueda.html">Productos</a></li>
+            </ul>
+        </nav>
+        <div class="headerGrid-ubicacionCarrito">
+        </div>
+        
+    </header>
+    <main>
+        
+        <!-- Seccion Formulario -->
+        <section class="seccionLogin" >
+            <form id="formLogin" action="">
+                <h2>Ingresar</h2>
+                <div>
+                    <label for="usuario">Usuario</label>
+                    <input id="usuario" type="text">
+                </div>
+                <div>
+                    <label for="pass">Contraseña</label>
+                    <input id="pass" type="password">
+                </div>
+                <div id="mensajeLogin">El Usuario o la contraseña es Incorrecto</div>
+                <button id="loguearse" type="submit">Loguearse</button>
+            </form>
+            
+            <form id="formRegistrarse" action="">
+                <h2>Registrarse</h2>
+                <div>
+                    <label for="nuevoUsuario">Nuevo Usuario</label>
+                    <input id="nuevoUsuario" type="text">
+                </div>
+                <div>
+                    <label for="nuevaPass">Contraseña</label>
+                    <input id="nuevaPass" type="password">
+                </div>
+                <div id="mensajeRegistro">El Usuario ya existe</div>
+                <button id="registrarse" type="submit">Registrarse</button>
+            </form>
+
+        </section>
+
+        
+    </main>
+    <footer>
+        <div class="footerAnchor">
+            <ul>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Gift Cards</a></li>
+                <li><a href="">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>
+        <div class="footerLogo">
+            <img src="../assets/img/logoPandora.png" alt="Logo pandora">
+            <p>pandora</p>
+            <p>Copyrigth</p>
+        </div>
+        <div class="footerAnchor">
+            <a href="">Contactanos</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="../db/usuarios.js"></script>
+    <script type="module" src="../js/admin.js"></script>
+    <script type="module" src="../js/usuario.js"></script>
+</body>
+</html>

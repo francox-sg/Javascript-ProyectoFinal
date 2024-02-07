@@ -1,0 +1,43 @@
+#busquedaContenedor{
+    width: 100%;
+    background-color: rgb(15, 14, 14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contenedorCategorias{
+    width: 100%;
+    display: none;
+    background-color: rgb(89, 89, 89);
+    
+    ul{
+        display:flex;
+        list-style: none;
+        gap: .9375rem;
+        li{
+            color: white;
+        }
+    }
+}
+
+#contenedorFiltrar{
+    display: none;
+    background-color: rgb(179, 179, 179);
+    div{
+        margin: 5px 20px;
+        h3{
+            font-size: 1rem;
+        }
+        button{
+            background-color: gray;
+        }
+        input{
+            width: 70px;
+            height: 1.5rem;
+        }
+
+
+    }
+
+}

@@ -1,0 +1,19 @@
+/* base */
+@import "./base/reset";
+@import "./base/typo";
+
+/* utilities */
+@import "./utilities/animations";
+@import "./utilities/maps";
+
+/* Components */
+@import "./components/cards";
+@import "./components/popUpCarrito";
+
+
+/* layout */
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/index";
+@import "./layout/busqueda";
+@import "./layout/login";
